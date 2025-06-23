@@ -1,3 +1,9 @@
+# NOTES
+- Yes, I'm a nerd.
+- No, this isn't mine: credit first and foremost to kickstart.nvim. I've built on top of this.
+
+
+
 # kickstart.nvim
 
 ## Introduction
