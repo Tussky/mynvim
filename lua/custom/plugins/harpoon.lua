@@ -16,9 +16,9 @@ return {
       desc = 'harpoon quick menu',
     },
     {
-      '<leader>A',
+      '<leader>a',
       function()
-        require('harpoon'):list():append()
+        require('harpoon'):list():add()
       end,
       desc = 'harpoon file',
     },
