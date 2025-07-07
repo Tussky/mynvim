@@ -777,8 +777,13 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         php = { 'phpcbf' },
-        python = { 'autoflake', 'mypy' },
-        --mypy verifies static types
+        python = { 'autoflake', 'isort', 'black' },
+        --[[Python breakdown
+        * autoflake: removes unused imports and variables
+        * isort: sorts groups and imports
+        * black: PEP8 formatter (spaces, quotes, linebreaks)
+        ]]
+        --
 
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },

@@ -8,6 +8,10 @@ return {
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
         python = { 'flake8' },
+        -- flake8 = pyflakes, pycodestyle, mccabe
+        -- pyflakes = unused imports, undeclared variables
+        -- pycodestyle = style errors (spacing+naming)
+        -- mccabe = complexity analyser
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
