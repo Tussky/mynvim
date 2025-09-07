@@ -1,5 +1,6 @@
 -- core functionality in seperate files
-require('core.options')
-require('core.keymaps')
-require('plugins')
+require('teapot.core.options')
+require('teapot.core.keymaps')
+require('teapot.plugins')
 -- plugin manager
+require('teapot.lazy')
