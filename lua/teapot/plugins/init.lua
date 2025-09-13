@@ -1,3 +1,3 @@
 return {
-	"nvim-lua/plenary.nvim" -- useful other plugins
+	{"nvim-lua/plenary.nvim"}, -- useful other plugins
 }

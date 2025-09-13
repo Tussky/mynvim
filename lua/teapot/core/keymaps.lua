@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- press 'jk' to escape insert mode

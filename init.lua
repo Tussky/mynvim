@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 -- core functionality in seperate files
 require('teapot.core.options')
 require('teapot.core.keymaps')
