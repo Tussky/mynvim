@@ -8,3 +8,14 @@ require('teapot.lazy')
 -- applying theme
 vim.o.termguicolors = true
 vim.cmd("colorscheme gruvbox")
+
+
+
+-- VIMTEX keybindings
+vim.api.nvim_create_autocmd('FileType', {
+	pattern = "tex",
+	callback = function()
+		vim.keymap.set('i', '<C-.>', '\\', {buffer = true, desc = 'Insert Backslash'})
+		vim.keymap.set('n', '<leader>l', ':VimtexCompile<CR>', { desc = "Compile Latex" })
+	end,
+})
