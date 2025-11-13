@@ -10,6 +10,9 @@ vim.o.termguicolors = true
 vim.cmd("colorscheme gruvbox")
 
 
+-- my aliases
+vim.api.nvim_create_user_command('Ox', 'Oil --float', {desc = "Open file tree with oil in floating window."})
+
 
 -- VIMTEX keybindings
 vim.api.nvim_create_autocmd('FileType', {
