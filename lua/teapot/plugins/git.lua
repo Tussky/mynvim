@@ -7,7 +7,7 @@ return {
 		opts = {
 			signcolumn = true, 
 			numhl = true,
-			linehl = true,
+			-- linehl = true,
 		},
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},

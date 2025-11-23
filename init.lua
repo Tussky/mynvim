@@ -7,6 +7,7 @@ require('teapot.plugins')
 require('teapot.lazy')
 -- applying theme
 vim.o.termguicolors = true
+vim.opt.cursorline = true
 vim.cmd("colorscheme gruvbox")
 
 
