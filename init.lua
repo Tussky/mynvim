@@ -1,8 +1,9 @@
 vim.g.mapleader = " "
 -- core functionality in seperate files
-require('teapot.core.options')
-require('teapot.core.keymaps')
-require('teapot.plugins')
+require('teapot.core.options') -- customisations
+require('teapot.core.keymaps') -- keymaps
+require('teapot.core.pretty')  -- sytlistic changes
+require('teapot.plugins') -- lazy plugins
 -- plugin manager
 require('teapot.lazy')
 -- applying theme
@@ -35,8 +36,9 @@ function toggle_lsp()
 		update_in_insert = toggle,
 	})
 	toggle = not toggle
+	print(toggle)
 end
-toggle_lsp()
+	toggle_lsp()
 -- my aliases
 vim.api.nvim_create_user_command('Ox', 'Oil --float', {desc = "Open file tree with oil in floating window."})
 
