@@ -9,6 +9,14 @@ return {
 		'lukas-reineke/indent-blankline.nvim',
 		main = 'ibl',
 		opts = {}
+	},
+	{
+		"folke/noice.nvim",
+		opts = {
+		
+		},
+		dependencies = {
+			"rcarriga/nvim-notify",
+		},
 	}
-
 }
